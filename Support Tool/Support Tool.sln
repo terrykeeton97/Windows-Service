@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Support Tool", "Support Tool.csproj", "{2EF56595-E2AE-4299-AB8F-CAFA286924BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows Utilities", "..\..\..\..\Projects\Csharp\Defender Control\Windows Utilities.csproj", "{BC518C7B-0827-4601-A198-04CCD95DB559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EF56595-E2AE-4299-AB8F-CAFA286924BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF56595-E2AE-4299-AB8F-CAFA286924BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF56595-E2AE-4299-AB8F-CAFA286924BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF56595-E2AE-4299-AB8F-CAFA286924BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC518C7B-0827-4601-A198-04CCD95DB559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC518C7B-0827-4601-A198-04CCD95DB559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC518C7B-0827-4601-A198-04CCD95DB559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC518C7B-0827-4601-A198-04CCD95DB559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35359298-9E51-44C2-A5E8-062C9D329ECC}
+	EndGlobalSection
+EndGlobal

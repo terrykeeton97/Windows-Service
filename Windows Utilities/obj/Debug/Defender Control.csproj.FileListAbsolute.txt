@@ -1,0 +1,8 @@
+D:\Projects\Csharp\Defender Control\bin\Debug\Defender Control.dll
+D:\Projects\Csharp\Defender Control\bin\Debug\Defender Control.pdb
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender Control.csproj.AssemblyReference.cache
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender Control.csproj.CoreCompileInputs.cache
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender Control.dll
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender Control.pdb
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender_Control.Properties.Resources.resources
+D:\Projects\Csharp\Defender Control\obj\Debug\Defender Control.csproj.GenerateResource.cache
