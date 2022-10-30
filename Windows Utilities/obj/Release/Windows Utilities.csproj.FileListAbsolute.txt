@@ -1,8 +1,0 @@
-D:\Projects\Csharp\Defender Control\bin\Release\Windows Utilities.dll
-D:\Projects\Csharp\Defender Control\bin\Release\Windows Utilities.pdb
-D:\Projects\Csharp\Defender Control\obj\Release\Windows_Utilities.Properties.Resources.resources
-D:\Projects\Csharp\Defender Control\obj\Release\Windows Utilities.csproj.GenerateResource.cache
-D:\Projects\Csharp\Defender Control\obj\Release\Windows Utilities.csproj.CoreCompileInputs.cache
-D:\Projects\Csharp\Defender Control\obj\Release\Windows Utilities.dll
-D:\Projects\Csharp\Defender Control\obj\Release\Windows Utilities.pdb
-D:\Projects\Csharp\Defender Control\obj\Release\Windows Utilities.csproj.AssemblyReference.cache
