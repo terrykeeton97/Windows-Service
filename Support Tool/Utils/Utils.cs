@@ -2,7 +2,7 @@
 
 namespace Support_Tool.Classes
 {
-    public class Utils
+    internal class Utils
     {
         internal static string RandomString()
         {
