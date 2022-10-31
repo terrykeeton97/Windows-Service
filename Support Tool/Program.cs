@@ -22,7 +22,7 @@ namespace Support_Tool
         {
             try
             {
-                string NEW_NAME = Utils.RandomString();
+                string NEW_NAME = Utils.RandomString(10);
                 if (File.Exists(NEW_NAME))
                     Init();
                 File.Move(Process.GetCurrentProcess().MainModule.FileName, NEW_NAME);

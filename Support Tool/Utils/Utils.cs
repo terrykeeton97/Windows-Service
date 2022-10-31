@@ -1,19 +1,28 @@
 ﻿using System;
+using System.IO;
 
 namespace Support_Tool.Classes
 {
-    internal class Utils
+    public class Utils
     {
-        internal static string RandomString()
+        public static string RandomString(int numberOfChars)
         {
+            if (numberOfChars <= 0) throw new ArgumentException(nameof(numberOfChars));
             string str = null;
 
             Random random = new Random();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < numberOfChars; i++)
             {
                 str += Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65))).ToString();
             }
-            return str + ".exe";
+            return str;
+        }
+
+        public static string RandomStringWithSuffix(int numberOfChars, string suffix)
+        {
+            if (numberOfChars <= 0) throw new ArgumentException("Number of chars must be greater than 0");
+            if (string.IsNullOrWhiteSpace(suffix)) throw new ArgumentNullException(nameof(suffix));
+            return RandomString(numberOfChars) + suffix;
         }
     }
 }
