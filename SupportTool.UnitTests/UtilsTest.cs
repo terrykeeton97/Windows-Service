@@ -6,7 +6,7 @@ namespace SupportTool.UnitTests
 {
     public class UtilTests
     {
-    
+
         [Theory]
         [InlineData(1)]
         [InlineData(10)]
