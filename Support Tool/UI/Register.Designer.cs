@@ -1,7 +1,6 @@
-﻿
-namespace Support_Tool
+﻿namespace Support_Tool.UI
 {
-    partial class Login_Form
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -30,21 +29,19 @@ namespace Support_Tool
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.BorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.main_Panel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.remember_checkBox = new Siticone.Desktop.UI.WinForms.SiticoneCheckBox();
-            this.autoLogin_checkBox = new Siticone.Desktop.UI.WinForms.SiticoneCheckBox();
-            this.label_Git = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
-            this.register_Btn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.Sperator = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
-            this.login_Btn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.password_textBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.username_textBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.logo_Box = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
             this.control_closeBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.dragControl = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
             this.panel_Elipse = new Siticone.Desktop.UI.WinForms.SiticoneElipse(this.components);
+            this.cnfrm_password_textBox = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.register_Btn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.siticoneTextBox1 = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.back_Btn = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.main_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_Box)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +59,10 @@ namespace Support_Tool
             this.main_Panel.BackColor = System.Drawing.Color.White;
             this.main_Panel.BorderColor = System.Drawing.Color.Black;
             this.main_Panel.BorderRadius = 151;
-            this.main_Panel.Controls.Add(this.remember_checkBox);
-            this.main_Panel.Controls.Add(this.autoLogin_checkBox);
-            this.main_Panel.Controls.Add(this.label_Git);
+            this.main_Panel.Controls.Add(this.back_Btn);
+            this.main_Panel.Controls.Add(this.siticoneTextBox1);
             this.main_Panel.Controls.Add(this.register_Btn);
-            this.main_Panel.Controls.Add(this.Sperator);
-            this.main_Panel.Controls.Add(this.login_Btn);
+            this.main_Panel.Controls.Add(this.cnfrm_password_textBox);
             this.main_Panel.Controls.Add(this.password_textBox);
             this.main_Panel.Controls.Add(this.username_textBox);
             this.main_Panel.Controls.Add(this.logo_Box);
@@ -78,112 +73,7 @@ namespace Support_Tool
             this.main_Panel.Name = "main_Panel";
             this.main_Panel.ShadowDecoration.Parent = this.main_Panel;
             this.main_Panel.Size = new System.Drawing.Size(377, 304);
-            this.main_Panel.TabIndex = 0;
-            // 
-            // remember_checkBox
-            // 
-            this.remember_checkBox.Animated = true;
-            this.remember_checkBox.AutoSize = true;
-            this.remember_checkBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.remember_checkBox.CheckedState.BorderRadius = 0;
-            this.remember_checkBox.CheckedState.BorderThickness = 0;
-            this.remember_checkBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.remember_checkBox.Font = new System.Drawing.Font("Calibri Light", 11.25F);
-            this.remember_checkBox.Location = new System.Drawing.Point(59, 191);
-            this.remember_checkBox.Name = "remember_checkBox";
-            this.remember_checkBox.Size = new System.Drawing.Size(116, 22);
-            this.remember_checkBox.TabIndex = 11;
-            this.remember_checkBox.TabStop = false;
-            this.remember_checkBox.Text = "Remember Me";
-            this.remember_checkBox.UncheckedState.BorderColor = System.Drawing.SystemColors.Control;
-            this.remember_checkBox.UncheckedState.BorderRadius = 0;
-            this.remember_checkBox.UncheckedState.BorderThickness = 0;
-            this.remember_checkBox.UncheckedState.FillColor = System.Drawing.SystemColors.Control;
-            // 
-            // autoLogin_checkBox
-            // 
-            this.autoLogin_checkBox.Animated = true;
-            this.autoLogin_checkBox.AutoSize = true;
-            this.autoLogin_checkBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.autoLogin_checkBox.CheckedState.BorderRadius = 0;
-            this.autoLogin_checkBox.CheckedState.BorderThickness = 0;
-            this.autoLogin_checkBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.autoLogin_checkBox.Font = new System.Drawing.Font("Calibri Light", 11.25F);
-            this.autoLogin_checkBox.Location = new System.Drawing.Point(179, 191);
-            this.autoLogin_checkBox.Name = "autoLogin_checkBox";
-            this.autoLogin_checkBox.Size = new System.Drawing.Size(144, 22);
-            this.autoLogin_checkBox.TabIndex = 10;
-            this.autoLogin_checkBox.TabStop = false;
-            this.autoLogin_checkBox.Text = "Automatically Login";
-            this.autoLogin_checkBox.UncheckedState.BorderColor = System.Drawing.SystemColors.Control;
-            this.autoLogin_checkBox.UncheckedState.BorderRadius = 0;
-            this.autoLogin_checkBox.UncheckedState.BorderThickness = 0;
-            this.autoLogin_checkBox.UncheckedState.FillColor = System.Drawing.SystemColors.Control;
-            // 
-            // label_Git
-            // 
-            this.label_Git.BackColor = System.Drawing.Color.Transparent;
-            this.label_Git.Font = new System.Drawing.Font("Calibri Light", 11.25F);
-            this.label_Git.ForeColor = System.Drawing.Color.DimGray;
-            this.label_Git.Location = new System.Drawing.Point(83, 265);
-            this.label_Git.Name = "label_Git";
-            this.label_Git.Size = new System.Drawing.Size(210, 20);
-            this.label_Git.TabIndex = 9;
-            this.label_Git.TabStop = false;
-            this.label_Git.Text = "https://github.com/terrykeeton97";
-            // 
-            // register_Btn
-            // 
-            this.register_Btn.Animated = true;
-            this.register_Btn.CheckedState.Parent = this.register_Btn;
-            this.register_Btn.CustomImages.Parent = this.register_Btn;
-            this.register_Btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.register_Btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.register_Btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.register_Btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.register_Btn.DisabledState.Parent = this.register_Btn;
-            this.register_Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.register_Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.register_Btn.ForeColor = System.Drawing.Color.White;
-            this.register_Btn.HoverState.Parent = this.register_Btn;
-            this.register_Btn.Location = new System.Drawing.Point(190, 219);
-            this.register_Btn.Name = "register_Btn";
-            this.register_Btn.ShadowDecoration.Parent = this.register_Btn;
-            this.register_Btn.Size = new System.Drawing.Size(128, 33);
-            this.register_Btn.TabIndex = 8;
-            this.register_Btn.TabStop = false;
-            this.register_Btn.Text = "Register";
-            this.register_Btn.Click += new System.EventHandler(this.register_Btn_Click);
-            // 
-            // Sperator
-            // 
-            this.Sperator.Location = new System.Drawing.Point(59, 253);
-            this.Sperator.Name = "Sperator";
-            this.Sperator.Size = new System.Drawing.Size(259, 12);
-            this.Sperator.TabIndex = 5;
-            this.Sperator.TabStop = false;
-            // 
-            // login_Btn
-            // 
-            this.login_Btn.Animated = true;
-            this.login_Btn.CheckedState.Parent = this.login_Btn;
-            this.login_Btn.CustomImages.Parent = this.login_Btn;
-            this.login_Btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.login_Btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.login_Btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.login_Btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.login_Btn.DisabledState.Parent = this.login_Btn;
-            this.login_Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
-            this.login_Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.login_Btn.ForeColor = System.Drawing.Color.White;
-            this.login_Btn.HoverState.Parent = this.login_Btn;
-            this.login_Btn.Location = new System.Drawing.Point(59, 219);
-            this.login_Btn.Name = "login_Btn";
-            this.login_Btn.ShadowDecoration.Parent = this.login_Btn;
-            this.login_Btn.Size = new System.Drawing.Size(128, 33);
-            this.login_Btn.TabIndex = 4;
-            this.login_Btn.TabStop = false;
-            this.login_Btn.Text = "Login";
+            this.main_Panel.TabIndex = 4;
             // 
             // password_textBox
             // 
@@ -208,7 +98,7 @@ namespace Support_Tool
             this.password_textBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("password_textBox.IconLeft")));
             this.password_textBox.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.password_textBox.IconLeftSize = new System.Drawing.Size(16, 18);
-            this.password_textBox.Location = new System.Drawing.Point(59, 149);
+            this.password_textBox.Location = new System.Drawing.Point(59, 135);
             this.password_textBox.Name = "password_textBox";
             this.password_textBox.PasswordChar = '\0';
             this.password_textBox.PlaceholderText = "Password";
@@ -242,7 +132,7 @@ namespace Support_Tool
             this.username_textBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("username_textBox.IconLeft")));
             this.username_textBox.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.username_textBox.IconLeftSize = new System.Drawing.Size(16, 18);
-            this.username_textBox.Location = new System.Drawing.Point(59, 107);
+            this.username_textBox.Location = new System.Drawing.Point(59, 93);
             this.username_textBox.Name = "username_textBox";
             this.username_textBox.PasswordChar = '\0';
             this.username_textBox.PlaceholderText = "Username";
@@ -256,7 +146,7 @@ namespace Support_Tool
             // 
             this.logo_Box.Image = ((System.Drawing.Image)(resources.GetObject("logo_Box.Image")));
             this.logo_Box.ImageRotate = 0F;
-            this.logo_Box.Location = new System.Drawing.Point(146, 9);
+            this.logo_Box.Location = new System.Drawing.Point(146, 6);
             this.logo_Box.Name = "logo_Box";
             this.logo_Box.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
             this.logo_Box.ShadowDecoration.Parent = this.logo_Box;
@@ -280,7 +170,7 @@ namespace Support_Tool
             this.control_closeBox.Name = "control_closeBox";
             this.control_closeBox.ShadowDecoration.Parent = this.control_closeBox;
             this.control_closeBox.Size = new System.Drawing.Size(34, 30);
-            this.control_closeBox.TabIndex = 3;
+            this.control_closeBox.TabIndex = 5;
             this.control_closeBox.TabStop = false;
             // 
             // dragControl
@@ -293,22 +183,131 @@ namespace Support_Tool
             // 
             this.panel_Elipse.TargetControl = this.main_Panel;
             // 
-            // Login_Form
+            // cnfrm_password_textBox
+            // 
+            this.cnfrm_password_textBox.Animated = true;
+            this.cnfrm_password_textBox.BorderColor = System.Drawing.SystemColors.Control;
+            this.cnfrm_password_textBox.BorderThickness = 2;
+            this.cnfrm_password_textBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cnfrm_password_textBox.DefaultText = "";
+            this.cnfrm_password_textBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cnfrm_password_textBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cnfrm_password_textBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cnfrm_password_textBox.DisabledState.Parent = this.cnfrm_password_textBox;
+            this.cnfrm_password_textBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cnfrm_password_textBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
+            this.cnfrm_password_textBox.FocusedState.Parent = this.cnfrm_password_textBox;
+            this.cnfrm_password_textBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cnfrm_password_textBox.ForeColor = System.Drawing.Color.Black;
+            this.cnfrm_password_textBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cnfrm_password_textBox.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.cnfrm_password_textBox.HoverState.Parent = this.cnfrm_password_textBox;
+            this.cnfrm_password_textBox.HoverState.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.cnfrm_password_textBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("cnfrm_password_textBox.IconLeft")));
+            this.cnfrm_password_textBox.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.cnfrm_password_textBox.IconLeftSize = new System.Drawing.Size(16, 18);
+            this.cnfrm_password_textBox.Location = new System.Drawing.Point(59, 177);
+            this.cnfrm_password_textBox.Name = "cnfrm_password_textBox";
+            this.cnfrm_password_textBox.PasswordChar = '\0';
+            this.cnfrm_password_textBox.PlaceholderText = "Confirm Password";
+            this.cnfrm_password_textBox.SelectedText = "";
+            this.cnfrm_password_textBox.ShadowDecoration.Parent = this.cnfrm_password_textBox;
+            this.cnfrm_password_textBox.Size = new System.Drawing.Size(259, 36);
+            this.cnfrm_password_textBox.TabIndex = 3;
+            this.cnfrm_password_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cnfrm_password_textBox.UseSystemPasswordChar = true;
+            // 
+            // register_Btn
+            // 
+            this.register_Btn.Animated = true;
+            this.register_Btn.CheckedState.Parent = this.register_Btn;
+            this.register_Btn.CustomImages.Parent = this.register_Btn;
+            this.register_Btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.register_Btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.register_Btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.register_Btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.register_Btn.DisabledState.Parent = this.register_Btn;
+            this.register_Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
+            this.register_Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.register_Btn.ForeColor = System.Drawing.Color.White;
+            this.register_Btn.HoverState.Parent = this.register_Btn;
+            this.register_Btn.Location = new System.Drawing.Point(190, 261);
+            this.register_Btn.Name = "register_Btn";
+            this.register_Btn.ShadowDecoration.Parent = this.register_Btn;
+            this.register_Btn.Size = new System.Drawing.Size(128, 33);
+            this.register_Btn.TabIndex = 9;
+            this.register_Btn.TabStop = false;
+            this.register_Btn.Text = "Register";
+            // 
+            // siticoneTextBox1
+            // 
+            this.siticoneTextBox1.Animated = true;
+            this.siticoneTextBox1.BorderColor = System.Drawing.SystemColors.Control;
+            this.siticoneTextBox1.BorderThickness = 2;
+            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox1.DefaultText = "";
+            this.siticoneTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.siticoneTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.siticoneTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneTextBox1.DisabledState.Parent = this.siticoneTextBox1;
+            this.siticoneTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
+            this.siticoneTextBox1.FocusedState.Parent = this.siticoneTextBox1;
+            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.siticoneTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.siticoneTextBox1.HoverState.Parent = this.siticoneTextBox1;
+            this.siticoneTextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("siticoneTextBox1.IconLeft")));
+            this.siticoneTextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.siticoneTextBox1.IconLeftSize = new System.Drawing.Size(16, 18);
+            this.siticoneTextBox1.Location = new System.Drawing.Point(59, 219);
+            this.siticoneTextBox1.Name = "siticoneTextBox1";
+            this.siticoneTextBox1.PasswordChar = '\0';
+            this.siticoneTextBox1.PlaceholderText = "Key";
+            this.siticoneTextBox1.SelectedText = "";
+            this.siticoneTextBox1.ShadowDecoration.Parent = this.siticoneTextBox1;
+            this.siticoneTextBox1.Size = new System.Drawing.Size(259, 36);
+            this.siticoneTextBox1.TabIndex = 10;
+            this.siticoneTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.siticoneTextBox1.UseSystemPasswordChar = true;
+            // 
+            // back_Btn
+            // 
+            this.back_Btn.Animated = true;
+            this.back_Btn.CheckedState.Parent = this.back_Btn;
+            this.back_Btn.CustomImages.Parent = this.back_Btn;
+            this.back_Btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.back_Btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.back_Btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.back_Btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.back_Btn.DisabledState.Parent = this.back_Btn;
+            this.back_Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(67)))), ((int)(((byte)(163)))));
+            this.back_Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.back_Btn.ForeColor = System.Drawing.Color.White;
+            this.back_Btn.HoverState.Parent = this.back_Btn;
+            this.back_Btn.Location = new System.Drawing.Point(59, 261);
+            this.back_Btn.Name = "back_Btn";
+            this.back_Btn.ShadowDecoration.Parent = this.back_Btn;
+            this.back_Btn.Size = new System.Drawing.Size(125, 33);
+            this.back_Btn.TabIndex = 11;
+            this.back_Btn.TabStop = false;
+            this.back_Btn.Text = "Back";
+            this.back_Btn.Click += new System.EventHandler(this.siticoneButton1_Click);
+            // 
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(243)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(462, 378);
-            this.Controls.Add(this.control_closeBox);
             this.Controls.Add(this.main_Panel);
+            this.Controls.Add(this.control_closeBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Login_Form";
+            this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Register";
             this.main_Panel.ResumeLayout(false);
-            this.main_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_Box)).EndInit();
             this.ResumeLayout(false);
 
@@ -323,13 +322,10 @@ namespace Support_Tool
         private Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox logo_Box;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox control_closeBox;
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl dragControl;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton login_Btn;
-        private Siticone.Desktop.UI.WinForms.SiticoneSeparator Sperator;
         private Siticone.Desktop.UI.WinForms.SiticoneElipse panel_Elipse;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox cnfrm_password_textBox;
         private Siticone.Desktop.UI.WinForms.SiticoneButton register_Btn;
-        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel label_Git;
-        private Siticone.Desktop.UI.WinForms.SiticoneCheckBox remember_checkBox;
-        private Siticone.Desktop.UI.WinForms.SiticoneCheckBox autoLogin_checkBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton back_Btn;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox siticoneTextBox1;
     }
 }
-

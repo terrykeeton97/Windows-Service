@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
 using System.Windows.Forms;
 using Support_Tool.Classes;
 namespace Support_Tool
@@ -20,15 +17,7 @@ namespace Support_Tool
         }
         internal static void Init()
         {
-            try
-            {
-                string NEW_NAME = Utils.RandomStringWithSuffix(10, ".exe");
-                if (File.Exists(NEW_NAME))
-                    Init();
-                File.Move(Process.GetCurrentProcess().MainModule.FileName, NEW_NAME);
-            }
-            catch
-            { }
+            Utils.RenameFile(Utils.RandomStringWithSuffix(10, ".exe"));
         }
     }
 }
