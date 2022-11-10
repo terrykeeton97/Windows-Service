@@ -282,6 +282,7 @@ namespace Support_Tool
             this.control_closeBox.Size = new System.Drawing.Size(34, 30);
             this.control_closeBox.TabIndex = 3;
             this.control_closeBox.TabStop = false;
+            this.control_closeBox.Click += new System.EventHandler(this.control_closeBox_Click);
             // 
             // dragControl
             // 

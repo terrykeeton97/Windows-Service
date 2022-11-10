@@ -1,6 +1,6 @@
 ﻿using KeyAuth;
-using Support_Tool.Classes;
 using Support_Tool.UI;
+using System;
 using System.Windows.Forms;
 
 namespace Support_Tool
@@ -11,7 +11,6 @@ namespace Support_Tool
     public partial class Login_Form : Form
     {
         #region prerequesties
-        Register register = new Register();
         public static api KeyAuthApp = new api(
             name: "example",
             ownerid: "JjPMBVlIOd",
@@ -20,17 +19,26 @@ namespace Support_Tool
             );
         #endregion
 
-
+        public static Form HANDLE()
+        {
+            return ActiveForm;
+        }
         public Login_Form()
         {
             InitializeComponent();
             Program.Init();
         }
-
         private void register_Btn_Click(object sender, System.EventArgs e)
         {
-            Hide();
-            register.Show();
+            Register Register = new Register();
+            Register.LOGIN_REFERENCE = this;
+            Visible = false;
+            Register.Show();
+        }
+
+        private void control_closeBox_Click(object sender, System.EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

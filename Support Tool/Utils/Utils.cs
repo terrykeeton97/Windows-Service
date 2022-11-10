@@ -1,7 +1,10 @@
 ﻿using Siticone.Desktop.UI.WinForms;
+using Support_Tool.UI;
 using System;
 using System.Diagnostics;
 using System.IO;
+
+using System.Windows.Forms;
 
 namespace Support_Tool.Classes
 {
@@ -26,20 +29,14 @@ namespace Support_Tool.Classes
             if (string.IsNullOrWhiteSpace(suffix)) throw new ArgumentNullException(nameof(suffix));
             return RandomString(numberOfChars) + suffix;
         }
-        public static SiticoneMessageDialog Message(string message, MessageDialogButtons option, MessageDialogIcon icon)
+        public static SiticoneMessageDialog Message(string message, MessageDialogIcon icon, Form HANDLE)
         {
-            //add more without having to manually insert each parameter manually.
-            //so if(error), if(information) and style the message dialog accordingly.
-            //  if(error)
-            //  {
-            //      dialog shows error style
-            //  }
-
             SiticoneMessageDialog dialog = new SiticoneMessageDialog();
-            dialog.Text = message;
             dialog.Style = MessageDialogStyle.Light;
+            dialog.Text = message;
+            dialog.Buttons = MessageDialogButtons.OK;
             dialog.Icon = icon;
-            dialog.Buttons = option;
+            dialog.Parent = HANDLE;
             return dialog;
         }
         public static void RenameFile(string NEW_NAME)
@@ -50,7 +47,7 @@ namespace Support_Tool.Classes
             }
             catch
             {
-                Message("Unable to rename file", MessageDialogButtons.OK, MessageDialogIcon.Error).Show();
+                Message("Unable to rename file", MessageDialogIcon.Information, Register.HANDLE()).Show();
             }
         }
     }

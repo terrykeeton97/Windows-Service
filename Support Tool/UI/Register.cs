@@ -5,16 +5,19 @@ namespace Support_Tool.UI
 {
     public partial class Register : Form
     {
+        public Form LOGIN_REFERENCE { get; set; }
         public Register()
         {
             InitializeComponent();
         }
-
-        private void siticoneButton1_Click(object sender, EventArgs e)
+        public static Form HANDLE()
         {
-            Login_Form login = new Login_Form();
+            return ActiveForm;
+        }
+        private void back_Btn_Click(object sender, EventArgs e)
+        {
+            LOGIN_REFERENCE.Show();
             Close();
-            login.Show();
         }
     }
 }
